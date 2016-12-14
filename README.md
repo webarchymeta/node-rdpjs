@@ -1,7 +1,7 @@
 node-rdpjs
 ========
 
-Remote Desktop Protocol for Node.js
+Remote Desktop Protocol for Node.js with SOCKS 5 support.
 
 node-rdpjs is a pure implementation of the Microsoft RDP (Remote Desktop Protocol) protocol (client and server side). node-rdpjs support only SSL security layer.
 
@@ -16,7 +16,7 @@ npm install node-rdpjs
 Or work with dev branch :
 
 ```
-git clone https://github.com/citronneur/node-rdpjs.git
+git clone https://github.com/webarchymeta/node-rdpjs.git
 cd node-rdpjs
 npm install
 ```
@@ -37,7 +37,12 @@ var client = rdp.createClient({
 	decompress : false,
 	screen : { width : 800, height : 600 },
 	locale : 'en',
-	logLevel : 'INFO'
+	logLevel : 'INFO',
+    proxy : {
+        socksHost : 'host name or ip address of the socks 5 server',
+        socksPort : 'port number of the socks 5 server',
+        disabled: false
+    }
 }).on('connect', function () {
 }).on('close', function() {
 }).on('bitmap', function(bitmap) {
