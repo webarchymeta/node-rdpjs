@@ -14,7 +14,7 @@
   "main": "lib/index.js",
   "dependencies": {
     "lodash": "^3.3.0",
-    "socks5-client": "^1.2.3",
+    "socks5-client": "git+https://github.com/webarchymeta/socks5-client.git",
     "starttls": "^1.0.1"
   }
 }
