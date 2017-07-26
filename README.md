@@ -38,11 +38,11 @@ var client = rdp.createClient({
 	screen : { width : 800, height : 600 },
 	locale : 'en',
 	logLevel : 'INFO',
-    proxy : {
-        socksHost : 'host name or ip address of the socks 5 server',
-        socksPort : 'port number of the socks 5 server',
-        disabled: false
-    }
+	proxy : {
+		socksHost : 'host name or ip address of the socks 5 server',
+		socksPort : 'port number of the socks 5 server',
+		disabled: false
+	}
 }).on('connect', function () {
 }).on('close', function() {
 }).on('bitmap', function(bitmap) {
@@ -69,6 +69,10 @@ Client parameters :
 	- INFO
 	- WARN
 	- ERROR
+* proxy {object} socks 5 parameters
+	- socksHost {string} host name or ip address of the socks 5 server
+	- socksPort {integer} port number of the socks 5 server
+	- disabled {boolean} whether or not the disable using proxy
 
 Use of decompress parameter impact performance.
 
