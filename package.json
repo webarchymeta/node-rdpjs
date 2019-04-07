@@ -2,9 +2,6 @@
   "name": "node-rdpjs",
   "author": "Sylvain Peyrefitte",
   "version": "0.3.0",
-  "engines": [
-    "node = 0.10.x"
-  ],
   "description": "Remote Desktop Protocol in Node.js",
   "license": "AGPL v3.0",
   "repository": {
@@ -13,7 +10,7 @@
   },
   "main": "lib/index.js",
   "dependencies": {
-    "lodash": "^3.3.0",
+    "lodash": "^4.17.11",
     "socks5-client": "git+https://github.com/webarchymeta/socks5-client.git",
     "starttls": "^1.0.1"
   }
