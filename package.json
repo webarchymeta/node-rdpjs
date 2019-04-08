@@ -6,7 +6,7 @@
   "license": "AGPL v3.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/citronneur/node-rdpjs"
+    "url": "https://github.com/webarchymeta/node-rdpjs"
   },
   "main": "lib/index.js",
   "dependencies": {
